@@ -1,0 +1,28 @@
+// Colors
+$color-white: #ffffff;
+$color-black: #000000;
+$color-night-rider: #2F2F2F;
+$color-night-rider-60: rgba($color-night-rider, 0.6);
+$color-night-rider-80: rgba($color-night-rider, 0.8);
+$color-portage: #7888E2;
+$color-free-speech-blue: #475CD6;
+$color-free-speech-blue-2: #364EDF;
+$color-royal-blue: #5C72EE;
+$color-solitude: #E8EEFF;
+$color-light-pink: #F5B8C0;
+$color-lavender-blush: #FFF0F1;
+$color-white-smoke: #F8F8F8;
+$color-solitude: #E8EEFF;
+$color-suva-grey: #8B8B8B;
+$color-red-orange: #FF2F2F;
+
+// Typography
+$ff-main: "Inter", "Arial", sans-serif;
+$ff-second: "Instrument Sans", "Arial", sans-serif;
+
+// Viewport
+$vp-tablet: 1023px;
+$vp-mobile: 767px;
+
+// Animation
+$transition-300: ease-in 0.3s;
