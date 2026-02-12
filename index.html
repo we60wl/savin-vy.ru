@@ -2,52 +2,120 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/vite.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
     <title>Владимир Савин | Full-Cycle Engineer</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__wrapper">
+        <div class="header__content">
           <a 
-            class="header__logo"
+            class="header__logo-link"
             aria-label="Ссылка на главную страницу"
             href="#"
           >
-            Name
+            <svg class="header__logo" width="100" height="60" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-header-logo"></use>
+            </svg>
           </a>
-          <nav class="main-nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__list-item">
-                <a class="main-nav__link" href="#">
-                  Home
-                </a>
-              </li>
-              <li class="main-nav__list-item">
-                <a class="main-nav__link" href="#">
-                  About
-                </a>
-              </li>
-              <li class="main-nav__list-item">
-                <a class="main-nav__link" href="#">
-                  Projects
-                </a>
-              </li>
-              <li class="main-nav__list-item">
-                <button
-                  class="main-nav__link"
-                  aria-label="Открыть форму обратной связи"
-                  type="button"
-                >
-                  Contact
-                </button>
-              </li>
-            </ul>
+          <nav class="main-nav header__main-nav">
+            <div class="main-nav__wrapper">
+              <div class="main-nav__inner">
+                <div class="main-nav__menu-inner main-nav__menu-inner--left">
+                  <ul class="main-nav__list">
+                    <li class="main-nav__list-item">
+                      <a class="main-nav__link" href="#">
+                        Обо мне
+                      </a>
+                    </li>
+                    <li class="main-nav__list-item">
+                      <a class="main-nav__link" href="#">
+                        Проекты
+                      </a>
+                    </li>
+                    <li class="main-nav__list-item">
+                      <a class="main-nav__link" href="#">
+                        Контакты
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="main-nav__social">
+                <li class="main-nav__social-item">
+                  <a class="main-nav__social-link" href="#" aria-label="Ссылка на Youtube">
+                    <svg class="header__logo" width="30" height="30" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="main-nav__social-item">
+                  <a class="main-nav__social-link" href="#" aria-label="Ссылка на Одноклассники">
+                    <svg class="header__logo" width="30" height="30" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-ok"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="main-nav__social-item">
+                  <a class="main-nav__social-link" href="#" aria-label="Ссылка на ВКонтакте">
+                    <svg class="header__logo" width="30" height="30" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="main-nav__social-item">
+                  <a class="main-nav__social-link" href="#" aria-label="Ссылка на Телеграм">
+                    <svg class="header__logo" width="30" height="30" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-tg"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <a href="tel:+79015953544" class="main-nav__phone">
+                <svg class="header__phone-logo" width="22" height="22" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-phone"></use>
+                </svg>
+                <span class="main-nav__phone-text">+7 (901) 595-35-44</span>
+              </a>
+            </div>
           </nav>
+          <a href="tel:+79015953544" class="header__phone">+7 (901) 595-35-44</a>
+          <ul class="header__users-list">
+            <li class="header__users-item">
+              <a class="header__users-link" href="#" aria-label="Ссылка на геолокацию офиса">
+                <svg class="header__users-icon" width="32" height="32" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-geo"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- <li class="header__users-item">
+              <button class="header__users-link" type="button" aria-label="Поиск по сайту">
+                <svg class="header__users-icon" width="32" height="32" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-search"></use>
+                </svg>
+              </button>
+            </li> -->
+            <li class="header__users-item header__users-item--burger">
+              <button class="header__users-link burger" type="button" aria-label="Открыть меню">
+                <span class="burger__menu"></span>
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
+    <main>
+      <section class="intro">
+        <div class="container">
+
+        </div>
+      </section>
+    </main>
     <div id="app"></div>
     <script type="module" src="/src/ts/main.ts"></script>
   </body>
