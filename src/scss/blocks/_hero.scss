@@ -1,0 +1,104 @@
+.hero {
+  animation: heroFadeIn 0.7s ease-in forwards;
+//   background-color: $color-solitude-3;
+  opacity: 0;
+  overflow: hidden;
+  position: relative;
+
+  &__wrapper {
+    align-items: center;
+    // background-color: $color-solitude-3;
+    display: flex;
+    gap: 56px;
+    min-height: calc(100vh - 88px);
+    padding: 70px 0;
+
+    @include vp-1023 {
+      flex-direction: column-reverse;
+      padding: 40px 0;
+      gap: 50px;
+    }
+    @include vp-767 {
+      gap: 25px;
+    }
+  }
+
+  &__heading {
+    animation: heroSlideInDown 1s ease-out forwards 2s;
+    color: $color-chinese-black;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    opacity: 0;
+    transform: translateY(-10%);
+    margin: 0 0 24px;
+  }
+
+  &__text {
+    animation: heroSlideInUp 1s ease-out forwards 3s;
+    color: $color-chinese-black;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 48px;
+    opacity: 0;
+    transform: translateY(10%);
+  }
+
+  &__buttons {
+    animation: heroSlideInUp 1s ease-out forwards 4s;
+    display: flex;
+    gap: 16px;
+    opacity: 0;
+    transform: translateY(10%);
+  }
+
+  &__download {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 18px 32px;
+    text-align: center;
+  }
+
+  &__button {
+    align-items: center;
+    background-color: $color-neurs;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    flex-shrink: 0;
+    height: 56px;
+    justify-content: center;
+    padding: 0;
+    width: 56px;
+  }
+
+  &__image {
+    animation: imageSlideInRight 2s linear forwards;
+    transform: scale(1.3) translateX(100%);
+    background-color: $color-neurs;
+    position: relative;
+    width: 564px;
+    height: 546px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+    @include vp-1023 {
+      width: 350px;
+      height: 350px;
+    }
+
+    @include vp-767 {
+      width: 150px;
+      height: 150px;
+    }
+
+    &-item {
+        animation: slideInUp .45s linear forwards 3s;
+        opacity: 0;
+        transform: translateY(10%);
+    }
+  }
+}
